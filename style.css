@@ -12,7 +12,9 @@
 }
 
 *{
+   position:fixed;
    margin: 0;
+   top: auto;
    box-sizing: border-box;
 }
 
