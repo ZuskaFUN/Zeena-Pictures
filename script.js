@@ -4,20 +4,20 @@
  * Github Profile    : https://github.com/codingstime
  */
 
-let onSlide = false;
+let onSlide = true;
 
-window.addEventListener("load", () => {
+// window.addEventListener("load", () => {
    autoSlide();
 
-   const dots = document.querySelectorAll(".carousel_dot");
-   for (let i = 0; i < dots.length; i++) {
-      dots[i].addEventListener("click", () => slide(i));
-   }
+   // const dots = document.querySelectorAll(".carousel_dot");
+   // for (let i = 0; i < dots.length; i++) {
+      // dots[i].addEventListener("click", () => slide(i));
+   // }
 
-   const buttonPrev = document.querySelector(".carousel_button__prev");
-   const buttonNext = document.querySelector(".carousel_button__next");
-   buttonPrev.addEventListener("click", () => slide(getItemActiveIndex() - 1));
-   buttonNext.addEventListener("click", () => slide(getItemActiveIndex() + 1));
+   // const buttonPrev = document.querySelector(".carousel_button__prev");
+   // const buttonNext = document.querySelector(".carousel_button__next");
+   // buttonPrev.addEventListener("click", () => slide(getItemActiveIndex() - 1));
+   // buttonNext.addEventListener("click", () => slide(getItemActiveIndex() + 1));
 })
 
 function autoSlide() {
@@ -29,7 +29,8 @@ function autoSlide() {
 function slide(toIndex) {
    if (onSlide)
       return;
-   onSlide = true;
+
+   // onSlide = true;
 
    const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
    const itemActive = document.querySelector(".carousel_item__active");
@@ -85,11 +86,11 @@ function getItemActiveIndex() {
    return itemActiveIndex;
 }
 
-function slideIndicator(toIndex) {
-   const dots = document.querySelectorAll(".carousel_dot");
-   const dotActive = document.querySelector(".carousel_dot__active");
-   const newDotActive = dots[toIndex];
+// function slideIndicator(toIndex) {
+   // const dots = document.querySelectorAll(".carousel_dot");
+   // const dotActive = document.querySelector(".carousel_dot__active");
+   // const newDotActive = dots[toIndex];
 
-   dotActive.classList.remove("carousel_dot__active");
-   newDotActive.classList.add("carousel_dot__active");
-}
+   // dotActive.classList.remove("carousel_dot__active");
+   // newDotActive.classList.add("carousel_dot__active");
+// }
