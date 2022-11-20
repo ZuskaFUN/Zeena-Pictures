@@ -4,7 +4,7 @@
  * Github Profile    : https://github.com/codingstime
  */
 
-let onSlide = true;
+let onSlide = false;
 
 window.addEventListener("load", () => {
    autoSlide();
@@ -30,7 +30,7 @@ function slide(toIndex) {
    if (onSlide)
       return;
 
-   // onSlide = true;
+   onSlide = true;
 
    const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
    const itemActive = document.querySelector(".carousel_item__active");
