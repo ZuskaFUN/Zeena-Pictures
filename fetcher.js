@@ -50,7 +50,7 @@ var google = require("googleapis"),
                                                                                                         auth: client,
                                                                                                         fileId: item.id,
                                                                                                         alt: "media"
-                                                                                                    }).pipe(file);
+                                                                                                    }) //.pipe(file);
                                                                                                 });
                                                                                                                             });
 
