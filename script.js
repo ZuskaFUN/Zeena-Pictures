@@ -76,7 +76,7 @@ function slide(toIndex) {
       once: true
    });
 
-   slideIndicator(toIndex);
+   // slideIndicator(toIndex);
 }
 
 function getItemActiveIndex() {
