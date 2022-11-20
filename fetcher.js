@@ -55,6 +55,10 @@ var client = buildClient(),
 
     folderId = gdfid; // The Google Drive Folder Id
 
+
+
+var imgs = new Array();
+
 // Request all image files from folder
 
 drive.children.list({
@@ -73,7 +77,7 @@ drive.children.list({
 
     response.items.forEach(function(item) {
 
-        item.title;
+        imgs.push(item.id);
 
         // var file = fs.createWriteStream("./" + item.title);
         
@@ -97,3 +101,4 @@ drive.children.list({
 
 });
 
+module.exports = fetcher;
