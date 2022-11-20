@@ -12,9 +12,8 @@
 }
 
 *{
-   position:fixed;
-   margin: 0;
-   top: 50%;
+   position: sticky;
+   top: 25%;
    box-sizing: border-box;
 }
 
@@ -24,6 +23,7 @@
 }
 
 .carousel_inner{
+   position:relative;
    width: 100%;
    overflow: hidden;
 }
@@ -32,6 +32,7 @@
    content: "";
    display: block;
    clear: both;
+   position:relative;
 }
 
 .carousel_item{
@@ -51,10 +52,12 @@
 
 .carousel_item__pos_prev{
    left: -100%;
+   position:relative;
 }
 
 .carousel_item__pos_next{
    left: 100%;
+   position:relative;
 }
 
 .carousel_item__prev{
