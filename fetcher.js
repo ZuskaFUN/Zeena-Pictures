@@ -15,7 +15,7 @@ var config = {
 
     "scope": "scope",
 
-    "redirect_url": "redirect_rul",
+    "redirect_url": "redirect_url",
 
     "tokens": {
 
@@ -73,11 +73,13 @@ drive.children.list({
 
     response.items.forEach(function(item) {
 
-        var file = fs.createWriteStream("./" + item.title);
+        item.title;
+
+        // var file = fs.createWriteStream("./" + item.title);
         
-        file.on("finish", function() {
-            console.log("downloaded", item.title);
-        });
+        // file.on("finish", function() {
+           // console.log("downloaded", item.title);
+        // });
 
         // Download file
 
@@ -94,3 +96,4 @@ drive.children.list({
     });
 
 });
+
