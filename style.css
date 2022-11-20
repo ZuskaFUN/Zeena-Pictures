@@ -14,7 +14,7 @@
 *{
    position:fixed;
    margin: 0;
-   top: auto;
+   top: 50%;
    box-sizing: border-box;
 }
 
